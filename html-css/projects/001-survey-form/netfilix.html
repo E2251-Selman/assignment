@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>001-Survey_Form</title>
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/2000px-Netflix_icon.svg.png"
+        type="image.png">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body
+    background="https://assets.nflxext.com/ffe/siteui/vlv3/d49b6ea4-5a64-4996-a004-9d4d4f32839a/93161a92-9a02-4599-8908-7393d23bc8a9/CH-en-20200817-popsignuptwoweeks-perspective_alpha_website_large.jpg">
+
+    <div id="Main">
+        <h1 id="Title">NET<span>FLIX</span></h1>
+        <h3 id="Desc"> Thank you for signing up at Netflix. Tell us more about your self
+        </h3>
+
+        <!-- </div> olursa hepsini secmiyor -->
+        <form id="Form" action="./survey.html" method="">
+            <div class="Table">
+                <label for="name" id="Fname">Name :</label><br>
+                <input type="text" name="name" id="Fname" placeholder="Enter your name " required>
+            </div>
+            <div class="Table">
+                <label for="age" id="Age">Age :</label><br>
+                <input type="number" name="age" id="Age" placeholder="Enter your age" required>
+            </div>
+            <div class="Table">
+                <label for="email" id="Email">Email :</label><br>
+                <input type="email" name="email" id="Email" placeholder="example@examle.com" required>
+            </div>
+            <div class="Table">
+                <label for="content" id="Content">Content Type</label><br>
+                <select name="" id="">
+                    <option value="series">Series</option>
+                    <option value="movie">Movie</option>
+                    <option value="documantary">Documantary</option>
+                </select>
+            </div>
+            <div class="Table">
+                <label id="Checkbox">Movie Type</label><br>
+                <label for=box-1> <input type="checkbox" id="box-1" name="movie-1" value="Comedy">Comedy</label><br>
+                <label for="box-2"><input type="checkbox" id="box-2" name="movie-2" value="Action">Action</label><br>
+                <label for="box-3"><input type="checkbox" id="box-3" name="movie-3" value="Romance"
+                        checked>Romance</label>
+            </div>
+            <div class="Table">
+                <label id="Radio">Gender</label><br>
+                <label for="rad-1"><input type="radio" id="rad-1" name="gender" value="">Male</label><br>
+                <label for="rad-2"><input type="radio" id="rad-2" name="gender" value="">Female</label><br>
+                <label for="rad-3"><input type="radio" id="rad-3" name="gender" value="">Other</label><br>
+            </div>
+            <div class="textarea">
+                <label id="Feed">Feed Back</label><br>
+                <textarea name="message" id="Feed" cols="50" rows="5" placeholder="Any comment"></textarea>
+            </div>
+            <div>
+                <input type="submit" id="Submit" value="Submit">
+            </div>
+        </form>
+
+</body>
+
+</html>
